@@ -1,0 +1,7 @@
+jobs:
+  build1:
+    docker:
+      - image: cyversevice/Rstudio-DESeq2
+    steps:
+      - checkout
+      - run: cyversevice/Rstudio-DESeq2
