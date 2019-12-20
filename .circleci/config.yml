@@ -1,7 +1,8 @@
-jobs:
-  build1:
-    docker:
-      - image: cyverse-vice/Rstudio-DESeq2
-    steps:
-      - checkout
-      - run: cyverse-vice/Rstudio-DESeq2
+workflows:
+          jobs:
+            build1:
+              docker:
+                - image: cyverse-vice/Rstudio-DESeq2
+              steps:
+                - checkout
+                - run: cyverse-vice/Rstudio-DESeq2
